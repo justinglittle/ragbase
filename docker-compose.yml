@@ -5,10 +5,9 @@ services:
     env_file:
       - .env
     ports:
-      - "3000:80"
+      - "3002:82"
     networks:
-      - demo
+      - jeff
 
 networks:
-  demo:
-    external: true
+  jeff:
