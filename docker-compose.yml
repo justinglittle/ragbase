@@ -1,0 +1,14 @@
+services:
+  km-frontend:
+    container_name: km-frontend
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "3000:80"
+    networks:
+      - demo
+
+networks:
+  demo:
+    external: true
